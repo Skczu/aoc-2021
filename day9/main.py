@@ -23,7 +23,7 @@ def checkPoint(heightMap, x, y):
   size = 0
   rightBound = len(heightMap[0])
   bottomBound = len(heightMap)
-  if (heightMap[x][y] == 9 or heightMap[x][y] == -1):
+  if heightMap[x][y] == 9 or heightMap[x][y] == -1:
     return size
   heightMap[x][y] = -1
   size += 1
